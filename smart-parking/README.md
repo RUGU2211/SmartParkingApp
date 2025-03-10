@@ -1,65 +1,25 @@
 # Smart Parking App
 
-A modern Android application for managing parking slots and bookings. The app allows users to find, book, and pay for parking slots in real-time.
+A modern Android application for managing parking spaces efficiently.
 
 ## Features
 
-- User Authentication
-  - Email-based registration with OTP verification
-  - Secure login system
-  - Password recovery functionality
-
-- Parking Slot Management
-  - Real-time availability status
-  - List and Map views of parking slots
-  - Detailed information about each slot
-  - Search and filter functionality
-
-- Booking System
-  - Easy slot booking process
-  - Duration selection
-  - Cost calculation
-  - Booking history
-
-- Payment Integration
-  - Secure payment processing
-  - Multiple payment methods support
-  - Transaction history
-  - Payment status tracking
-
-- Location Services
-  - GPS integration
-  - Distance calculation
-  - Navigation support
+- User Authentication with Email Verification (OTP)
+- Real-time Parking Slot Availability
+- Interactive Map View
+- List View of Available Slots
+- Booking Management System
+- Secure Payment Integration
+- Email Notifications
 
 ## Technical Stack
 
-- **Language**: Java
-- **Minimum SDK**: 24 (Android 7.0)
-- **Target SDK**: 33 (Android 13)
-- **Database**: Room Persistence Library
-- **Architecture**: MVVM
-- **Maps Integration**: Google Maps API
-- **UI Components**: Material Design 3
-
-## Dependencies
-
-- AndroidX Core and AppCompat
-- Material Design Components
-- Room Database
-- Lifecycle Components
-- Google Maps and Location Services
-- JavaMail for email functionality
-- ViewPager2
-- SwipeRefreshLayout
-
-## Setup Instructions
-
-1. Clone the repository
-2. Open the project in Android Studio
-3. Add your Google Maps API key in AndroidManifest.xml
-4. Update EmailService.java with your email credentials
-5. Build and run the project
+- **Architecture:** MVVM (Model-View-ViewModel)
+- **Database:** Room Persistence Library
+- **UI Components:** Material Design
+- **Maps Integration:** Google Maps API
+- **Authentication:** Custom Email-based OTP System
+- **Testing:** JUnit, Espresso
 
 ## Project Structure
 
@@ -68,36 +28,38 @@ app/
 ├── src/
 │   ├── main/
 │   │   ├── java/com/smartparking/
-│   │   │   ├── activities/       # Activity classes
-│   │   │   ├── adapters/        # RecyclerView adapters
-│   │   │   ├── database/        # Room database and DAOs
-│   │   │   ├── fragments/       # Fragment classes
-│   │   │   ├── models/          # Data models
-│   │   │   └── utils/           # Utility classes
+│   │   │   ├── activities/
+│   │   │   ├── adapters/
+│   │   │   ├── database/
+│   │   │   ├── fragments/
+│   │   │   ├── models/
+│   │   │   └── utils/
 │   │   └── res/
-│   │       ├── drawable/        # Images and drawable resources
-│   │       ├── layout/          # XML layout files
-│   │       ├── menu/           # Menu resources
-│   │       └── values/         # Strings, colors, styles
-│   └── androidTest/            # Instrumentation tests
-└── build.gradle               # App-level Gradle build file
+│   └── test/
+└── build.gradle
 ```
+
+## Setup
+
+1. Clone the repository
+2. Open the project in Android Studio
+3. Add your Google Maps API key in `local.properties`:
+   ```
+   MAPS_API_KEY=your_api_key_here
+   ```
+4. Build and run the project
+
+## Testing
+
+The project includes both unit tests and instrumentation tests:
+
+- Unit Tests: `./gradlew test`
+- Instrumentation Tests: `./gradlew connectedAndroidTest`
 
 ## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Material Design Guidelines
-- Google Maps Platform
-- Android Room Documentation
-- Android Developer Documentation
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
