@@ -1,128 +1,52 @@
 # Contributing to Smart Parking App
 
-First off, thank you for considering contributing to Smart Parking App! It's people like you that make Smart Parking App such a great tool.
+We love your input! We want to make contributing to Smart Parking App as easy and transparent as possible, whether it's:
 
-## Code of Conduct
+- Reporting a bug
+- Discussing the current state of the code
+- Submitting a fix
+- Proposing new features
+- Becoming a maintainer
 
-This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code.
+## We Develop with Github
+We use Github to host code, to track issues and feature requests, as well as accept pull requests.
 
-## How Can I Contribute?
+## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html)
+Pull requests are the best way to propose changes to the codebase. We actively welcome your pull requests:
 
-### Reporting Bugs
+1. Fork the repo and create your branch from `main`.
+2. If you've added code that should be tested, add tests.
+3. If you've changed APIs, update the documentation.
+4. Ensure the test suite passes.
+5. Make sure your code lints.
+6. Issue that pull request!
 
-Before creating bug reports, please check the issue list as you might find out that you don't need to create one. When you are creating a bug report, please include as many details as possible:
+## Any contributions you make will be under the MIT Software License
+In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
 
-* Use a clear and descriptive title
-* Describe the exact steps which reproduce the problem
-* Provide specific examples to demonstrate the steps
-* Describe the behavior you observed after following the steps
-* Explain which behavior you expected to see instead and why
-* Include screenshots if possible
-* Include your environment details (OS, Android version, device model)
+## Report bugs using Github's [issue tracker](https://github.com/yourusername/smart-parking/issues)
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/yourusername/smart-parking/issues/new); it's that easy!
 
-### Suggesting Enhancements
+## Write bug reports with detail, background, and sample code
 
-Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, please include:
+**Great Bug Reports** tend to have:
 
-* Use a clear and descriptive title
-* Provide a step-by-step description of the suggested enhancement
-* Provide specific examples to demonstrate the steps
-* Describe the current behavior and explain which behavior you expected to see instead
-* Explain why this enhancement would be useful
-* List some other applications where this enhancement exists, if applicable
-* Include screenshots or mockups if possible
+- A quick summary and/or background
+- Steps to reproduce
+  - Be specific!
+  - Give sample code if you can.
+- What you expected would happen
+- What actually happens
+- Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
 
-### Pull Requests
+## Use a Consistent Coding Style
 
-* Fill in the required template
-* Do not include issue numbers in the PR title
-* Follow the Java styleguides
-* Include screenshots in your pull request whenever possible
-* Document new code
-* End all files with a newline
+* Use the [Android Style Guide](https://developer.android.com/kotlin/style-guide)
+* 4 spaces for indentation rather than tabs
+* You can try running `./gradlew ktlintFormat` for style unification
 
-## Styleguides
+## License
+By contributing, you agree that your contributions will be licensed under its MIT License.
 
-### Git Commit Messages
-
-* Use the present tense ("Add feature" not "Added feature")
-* Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-* Limit the first line to 72 characters or less
-* Reference issues and pull requests liberally after the first line
-* Consider starting the commit message with an applicable emoji:
-    * 🎨 `:art:` when improving the format/structure of the code
-    * 🐎 `:racehorse:` when improving performance
-    * 🚱 `:non-potable_water:` when plugging memory leaks
-    * 📝 `:memo:` when writing docs
-    * 🐛 `:bug:` when fixing a bug
-    * 🔥 `:fire:` when removing code or files
-    * 💚 `:green_heart:` when fixing the CI build
-    * ✅ `:white_check_mark:` when adding tests
-    * 🔒 `:lock:` when dealing with security
-    * ⬆️ `:arrow_up:` when upgrading dependencies
-    * ⬇️ `:arrow_down:` when downgrading dependencies
-
-### Java Styleguide
-
-* Use 4 spaces for indentation
-* Class names should be in PascalCase
-* Method names should be in camelCase
-* Variable names should be in camelCase
-* Constant names should be in SCREAMING_SNAKE_CASE
-* Use meaningful names for variables, methods, and classes
-* Add comments for complex logic
-* Follow the Single Responsibility Principle
-* Keep methods short and focused
-* Use appropriate access modifiers
-* Handle exceptions appropriately
-* Include Javadoc for public methods
-
-### Documentation Styleguide
-
-* Use [Markdown](https://guides.github.com/features/mastering-markdown/)
-* Reference methods and classes in backticks
-* Use code blocks for code examples
-* Keep documentation up to date with code changes
-* Include examples where appropriate
-* Document both success and error scenarios
-* Include links to related documentation
-
-## Project Structure
-
-Please maintain the existing project structure:
-
-```
-app/
-├── src/
-│   ├── main/
-│   │   ├── java/com/smartparking/
-│   │   │   ├── activities/       # Activity classes
-│   │   │   ├── adapters/        # RecyclerView adapters
-│   │   │   ├── database/        # Room database and DAOs
-│   │   │   ├── fragments/       # Fragment classes
-│   │   │   ├── models/          # Data models
-│   │   │   └── utils/           # Utility classes
-│   │   └── res/
-│   │       ├── drawable/        # Images and drawable resources
-│   │       ├── layout/          # XML layout files
-│   │       ├── menu/           # Menu resources
-│   │       └── values/         # Strings, colors, styles
-│   └── androidTest/            # Instrumentation tests
-└── build.gradle               # App-level Gradle build file
-```
-
-## Additional Notes
-
-### Issue and Pull Request Labels
-
-Labels help us track and manage issues and pull requests.
-
-* `bug` - Issues that are bugs
-* `enhancement` - Issues that are feature requests
-* `documentation` - Issues that are about documentation
-* `help-wanted` - Issues that need assistance
-* `wontfix` - Issues that will not be worked on
-* `duplicate` - Issues that are duplicates of other issues
-* `good first issue` - Good issues for first-time contributors
-
-Thank you for contributing to Smart Parking App!
+## References
+This document was adapted from the open-source contribution guidelines for [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md).
